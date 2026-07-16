@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fire Burger</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= TOPO ================= -->
+
+    <div class="barra-topo">
+      <div class="container">
+        <span>
+          🍔 Hambúrgueres Artesanais • Ingredientes Selecionados • Atendimento
+          via WhatsApp
+        </span>
+      </div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="container header-superior">
+        <div class="logo">
+          <img src="img/logo.png" alt="Fire Burger" />
+        </div>
+
+        <div class="pesquisa">
+          <input type="text" placeholder="Pesquisar no cardápio..." />
+
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+        <div class="header-icons">
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-texto">
+          <span class="mini"> Fire Burger </span>
+
+          <h1>Hambúrgueres artesanais feitos para quem ama sabor.</h1>
+
+          <p>
+            Muito mais que um lanche. Uma experiência com ingredientes frescos,
+            carnes selecionadas e combinações irresistíveis.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="#mais-pedidos" class="btn-laranja"> Ver Cardápio </a>
+
+            <a href="#contato" class="btn-branco"> Fale Conosco </a>
+          </div>
+        </div>
+
+        <div class="hero-imagem">
+          <img src="img/banner.png" alt="Hambúrguer" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INFO ================= -->
+
+    <section class="info-loja">
+      <div class="container">
+        <div class="info-card">
+          <i class="bi bi-star-fill"></i>
+
+          <h3>4.9</h3>
+
+          <span>Avaliação</span>
+        </div>
+
+        <div class="info-card">
+          <i class="bi bi-clock-fill"></i>
+
+          <h3>18h às 23h</h3>
+
+          <span>Funcionamento</span>
+        </div>
+
+        <div class="info-card">
+          <i class="bi bi-geo-alt-fill"></i>
+
+          <h3>Campo Grande - MS</h3>
+
+          <span>Localização</span>
+        </div>
+
+        <div class="info-card">
+          <i class="bi bi-whatsapp"></i>
+
+          <h3>WhatsApp</h3>
+
+          <span>Pedidos rápidos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU STICKY ================= -->
+
+    <section class="menu-categorias">
+      <div class="container">
+        <a href="#mais-pedidos" class="ativo"> 🍔 Mais Pedidos </a>
+
+        <a href="#promocoes"> 🔥 Promoções </a>
+
+        <a href="#hamburgueres"> 🍟 Hambúrgueres </a>
+
+        <a href="#combos"> 🥓 Combos </a>
+
+        <a href="#bebidas"> 🥤 Bebidas </a>
+
+        <a href="#sobremesas"> 🍰 Sobremesas </a>
+      </div>
+    </section>
+
+    <main>
+      <!-- ================= MAIS PEDIDOS ================= -->
+
+      <section id="mais-pedidos" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span> Mais Vendido </span>
+
+            <h2>Os favoritos dos clientes</h2>
+
+            <p>Conheça os hambúrgueres que fazem sucesso na Fire Burger.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <img src="img/hamburguer.png" alt="Hambúrguer" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Fire Burger Bacon</h3>
+
+                <p>
+                  Hambúrguer artesanal, cheddar, bacon crocante, pão brioche e
+                  molho especial.
+                </p>
+
+                <span> A partir de </span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROMOÇÕES ================= -->
+
+      <section id="promocoes" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span>Ofertas da Semana</span>
+
+            <h2>Promoções</h2>
+
+            <p>Aproveite nossas promoções por tempo limitado.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <span class="selo">-20%</span>
+
+                <img src="img/combo.png" alt="Combo" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Combo Fire</h3>
+
+                <p>Hambúrguer artesanal, batata frita e refrigerante.</p>
+
+                <span>A partir de</span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HAMBÚRGUERES ================= -->
+
+      <section id="hamburgueres" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span>Artesanais</span>
+
+            <h2>Hambúrgueres</h2>
+
+            <p>Preparados na hora com ingredientes frescos.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <img src="img/hamburguer2.png" alt="Hambúrguer" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Classic Burger</h3>
+
+                <p>
+                  Pão brioche, carne artesanal, queijo cheddar e molho da casa.
+                </p>
+
+                <span>A partir de</span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMBOS ================= -->
+
+      <section id="combos" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span>Perfeito para compartilhar</span>
+
+            <h2>Combos</h2>
+
+            <p>Economize escolhendo nossos combos especiais.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <img src="img/combo2.png" alt="Combo" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Combo Família</h3>
+
+                <p>Dois hambúrgueres, batata grande e refrigerantes.</p>
+
+                <span>A partir de</span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BEBIDAS ================= -->
+
+      <section id="bebidas" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span>Complete seu pedido</span>
+
+            <h2>Bebidas</h2>
+
+            <p>Refrigerantes, sucos e muito mais.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <img src="img/refrigerante.png" alt="Refrigerante" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Refrigerante Lata</h3>
+
+                <p>Coca-Cola, Guaraná, Fanta e Sprite.</p>
+
+                <span>A partir de</span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SOBREMESAS ================= -->
+
+      <section id="sobremesas" class="categoria">
+        <div class="container">
+          <div class="titulo">
+            <span>O toque final</span>
+
+            <h2>Sobremesas</h2>
+
+            <p>Finalize sua refeição com muito sabor.</p>
+          </div>
+
+          <div class="produtos-grid">
+            <article class="produto">
+              <div class="produto-img">
+                <img src="img/milkshake.png" alt="Milk Shake" />
+              </div>
+
+              <div class="produto-info">
+                <h3>Milk Shake</h3>
+
+                <p>Chocolate, morango, baunilha ou Ovomaltine.</p>
+
+                <span>A partir de</span>
+
+                <h4>R$ 00,00</h4>
+
+                <button>Ver Produto</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+        <!-- ================= SOBRE NÓS ================= -->
+
+        <section class="sobre">
+
+            <div class="container sobre-container">
+
+                <div class="sobre-imagem">
+
+                    <img src="img/ambiente.jpg" alt="Fire Burger">
+
+                </div>
+
+                <div class="sobre-texto">
+
+                    <span class="mini-titulo">
+                        Nossa História
+                    </span>
+
+                    <h2>
+                        Muito mais do que hambúrgueres.
+                    </h2>
+
+                    <p>
+
+                        A Fire Burger nasceu da paixão por criar hambúrgueres
+                        artesanais preparados com ingredientes frescos,
+                        carnes selecionadas e receitas exclusivas.
+
+                    </p>
+
+                    <p>
+
+                        Cada pedido é preparado na hora,
+                        garantindo sabor, qualidade e uma experiência
+                        única para nossos clientes.
+
+                    </p>
+
+                    <div class="sobre-numeros">
+
+                        <div>
+
+                            <h3>+5</h3>
+
+                            <span>Anos</span>
+
+                        </div>
+
+                        <div>
+
+                            <h3>10mil+</h3>
+
+                            <span>Pedidos</span>
+
+                        </div>
+
+                        <div>
+
+                            <h3>4.9★</h3>
+
+                            <span>Avaliação</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ================= GALERIA ================= -->
+
+        <section class="galeria">
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Conheça nosso ambiente</span>
+
+                    <h2>Galeria</h2>
+
+                    <p>
+
+                        Alguns momentos e produtos da Fire Burger.
+
+                    </p>
+
+                </div>
+
+                <div class="galeria-grid">
+
+                    <img src="img/foto1.jpg" alt="">
+
+                    <img src="img/foto2.jpg" alt="">
+
+                    <img src="img/foto3.jpg" alt="">
+
+                    <img src="img/foto4.jpg" alt="">
+
+                    <img src="img/foto5.jpg" alt="">
+
+                    <img src="img/foto6.jpg" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ================= AVALIAÇÕES ================= -->
+
+        <section class="avaliacoes">
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Quem prova recomenda</span>
+
+                    <h2>O que nossos clientes dizem</h2>
+
+                </div>
+
+                <div class="avaliacoes-grid">
+
+                    <article class="avaliacao">
+
+                        <div class="estrelas">
+
+                            ★★★★★
+
+                        </div>
+
+                        <p>
+
+                            "Sem dúvidas um dos melhores hambúrgueres da cidade.
+                            Atendimento excelente e lanche impecável."
+
+                        </p>
+
+                        <h4>João Pedro</h4>
+
+                    </article>
+
+                    <article class="avaliacao">
+
+                        <div class="estrelas">
+
+                            ★★★★★
+
+                        </div>
+
+                        <p>
+
+                            "Batata sequinha, carne suculenta e entrega rápida.
+                            Recomendo muito."
+
+                        </p>
+
+                        <h4>Ana Clara</h4>
+
+                    </article>
+
+                    <article class="avaliacao">
+
+                        <div class="estrelas">
+
+                            ★★★★★
+
+                        </div>
+
+                        <p>
+
+                            "Sempre peço aos finais de semana.
+                            Nunca decepciona."
+
+                        </p>
+
+                        <h4>Lucas Henrique</h4>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ================= CONTATO ================= -->
+
+        <section id="contato" class="contato">
+
+            <div class="container contato-container">
+
+                <div class="contato-texto">
+
+                    <span>Venha nos visitar</span>
+
+                    <h2>Informações</h2>
+
+                    <div class="info">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <div>
+
+                            <h4>Endereço</h4>
+
+                            <p>Rua Exemplo, 1000 - Campo Grande/MS</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info">
+
+                        <i class="bi bi-clock-fill"></i>
+
+                        <div>
+
+                            <h4>Funcionamento</h4>
+
+                            <p>Terça a Domingo • 18h às 23h</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info">
+
+                        <i class="bi bi-whatsapp"></i>
+
+                        <div>
+
+                            <h4>WhatsApp</h4>
+
+                            <p>(67) 99999-9999</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="botoes-contato">
+
+                        <a href="#" class="btn-laranja">
+
+                            Fazer Pedido
+
+                        </a>
+
+                        <a href="#" class="btn-branco">
+
+                            Como Chegar
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="contato-mapa">
+
+                    <img src="img/mapa.jpg" alt="Mapa">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-logo">
+
+                <img src="img/logo.png" alt="Fire Burger">
+
+                <p>
+
+                    Hambúrgueres artesanais preparados com ingredientes
+                    selecionados e muito sabor.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Cardápio</h3>
+
+                <ul>
+
+                    <li><a href="#mais-pedidos">Mais Pedidos</a></li>
+
+                    <li><a href="#promocoes">Promoções</a></li>
+
+                    <li><a href="#hamburgueres">Hambúrgueres</a></li>
+
+                    <li><a href="#combos">Combos</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contato</h3>
+
+                <ul>
+
+                    <li>(67) 99999-9999</li>
+
+                    <li>Campo Grande - MS</li>
+
+                    <li>contato@fireburger.com</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Fire Burger • Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

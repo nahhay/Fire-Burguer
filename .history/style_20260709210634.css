@@ -1,0 +1,508 @@
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Montserrat',sans-serif;
+
+    background:#ffffff;
+
+    color:#2b2b2b;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    font-family:inherit;
+
+}
+
+.container{
+
+    width:min(1280px,92%);
+
+    margin:auto;
+
+}
+
+/*==================================================
+                CORES
+==================================================*/
+
+:root{
+
+    --laranja:#ff6b00;
+
+    --laranja-hover:#ff8124;
+
+    --cinza:#666;
+
+    --cinza-claro:#f7f7f7;
+
+    --texto:#2d2d2d;
+
+    --borda:#ececec;
+
+    --sombra:0 12px 35px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+/*==================================================
+                BARRA SUPERIOR
+==================================================*/
+
+.barra-topo{
+
+    background:var(--laranja);
+
+    color:#fff;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.barra-topo .container{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/*==================================================
+                HEADER
+==================================================*/
+
+header{
+
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.header-superior{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding:18px 0;
+
+}
+
+.logo img{
+
+    width:150px;
+
+}
+
+/*==================================================
+                PESQUISA
+==================================================*/
+
+.pesquisa{
+
+    flex:1;
+
+    max-width:620px;
+
+    position:relative;
+
+}
+
+.pesquisa input{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    background:#f5f5f5;
+
+    border-radius:50px;
+
+    padding:0 70px 0 25px;
+
+    font-size:15px;
+
+    transition:.30s;
+
+}
+
+.pesquisa input:focus{
+
+    outline:none;
+
+    background:#fff;
+
+    box-shadow:0 0 0 3px rgba(255,107,0,.18);
+
+}
+
+.pesquisa button{
+
+    position:absolute;
+
+    right:8px;
+
+    top:8px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--laranja);
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.30s;
+
+}
+
+.pesquisa button:hover{
+
+    background:var(--laranja-hover);
+
+}
+
+/*==================================================
+                ICONES
+==================================================*/
+
+.header-icons{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+.header-icons a{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#fff5ef;
+
+    color:var(--laranja);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    transition:.30s;
+
+}
+
+.header-icons a:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--laranja);
+
+    color:#fff;
+
+}
+
+/*==================================================
+                HERO
+==================================================*/
+
+.hero{
+
+    padding:90px 0;
+
+    background:linear-gradient(180deg,#fff,#fff7f2);
+
+}
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.hero-texto span{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#fff3eb;
+
+    color:var(--laranja);
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero-texto h1{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+    color:#222;
+
+}
+
+.hero-texto p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    max-width:560px;
+
+}
+
+.hero-botoes{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.btn-laranja{
+
+    background:var(--laranja);
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+.btn-laranja:hover{
+
+    background:var(--laranja-hover);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-branco{
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    border:2px solid var(--laranja);
+
+    color:var(--laranja);
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+.btn-branco:hover{
+
+    background:var(--laranja);
+
+    color:#fff;
+
+}
+
+.hero-imagem{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-imagem img{
+
+    width:95%;
+
+    animation:flutuar 4s ease-in-out infinite;
+
+}
+
+@keyframes flutuar{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/*==========================
+    ANIMAÇÕES JS
+==========================*/
+
+.produto,
+.info-card,
+.avaliacao,
+.sobre,
+.galeria img{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.7s;
+
+}
+
+.aparecer{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==========================
+    HEADER
+==========================*/
+
+.header-scroll{
+
+    padding:5px 0;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+/*==========================
+    MENU MOBILE
+==========================*/
+
+.menu-categorias{
+
+    transition:.35s;
+
+}
+
+.menu-categorias.ativo{
+
+    left:0;
+
+}
+
+/*==========================
+    BOTÃO TOPO
+==========================*/
+
+.btn-topo{
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.35s;
+
+}
+
+.btn-topo.mostrar{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
